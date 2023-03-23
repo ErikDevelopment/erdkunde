@@ -1,0 +1,19 @@
+@media (max-width:991px) {
+    body.poster {
+        margin-top: 40vh;
+    }
+}
+
+body.poster {
+    background-attachment: fixed;
+}
+
+.top-5 {
+    top: 5px;
+}
+
+@media (max-width:991px) {
+    .dark-background-on-small {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+}

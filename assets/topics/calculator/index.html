@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator モRIK#6436</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css sheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="result">
+          
+          <input type="text" readonly id="res" placeholder="0.0">
+        </div>
+        <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="backspace()">←</button>
+          <button onclick="insert('^')">^</button>
+          <button id="div"onclick="insert('/')">/</button>
+          <button onclick="insert('7')">7</button>
+          <button onclick="insert('8')">8</button>
+          <button onclick="insert('9')">9</button>
+          <button id="div" onclick="insert('*')">*</button>
+          <button onclick="insert('4')">4</button>
+          <button onclick="insert('5')">5</button>
+          <button onclick="insert('6')">6</button>
+          <button id="sub" onclick="insert('-')">-</button>
+          <button onclick="insert('1')">1</button>
+          <button onclick="insert('2')">2</button>
+          <button onclick="insert('3')">3</button>
+          <button id="add" onclick="insert('+')">+</button>
+          <button onclick="insert('0')">0</button>
+          <button id="dot" onclick="insert('.')">.</button>
+          <button onclick="insert('Math.PI')">π</button>
+          <button id="add" onclick="calculate()">=</button>
+          <button onclick="insert('sin(')">sin</button>
+          <button onclick="insert('cos(')">cos</button>
+          <button onclick="insert('tan(')">tan</button>
+          <button onclick="insert('sqrt(')">sqrt</button>
+          <button onclick="insert('log(')">log</button>
+          <button onclick="insert('exp(')">exp</button>
+        </div>
+
+        <div class="mode" onclick="chMode()">
+          <i id="mode" class="fa-solid fa-moon"></i>
+      </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
